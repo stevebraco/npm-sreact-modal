@@ -1,7 +1,16 @@
 {
   "name": "sreact-modal",
   "version": "0.1.0",
-  "private": true,
+  "private": "false",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevebraco/npm-sreact-modal.git"
+    
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
