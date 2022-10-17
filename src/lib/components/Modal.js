@@ -1,17 +1,49 @@
-import React from 'react'
+import React from 'react';
+import './styles/modal.css';
+import styled from 'styled-components';
 
-import './styles/modal.css'
+const ContainerModal = styled.section`
+  background: ${(props) => props.background || 'rgba(0,0,0, .6)'};
+  position: absolute;
+  width: 100%;
+  inset: 0;
+`;
 
-const Modal = ({isOpen, onRequestClose, children}) => {
-  if(isOpen) {
+const ModalStyles = styled.div`
+  background: ${(props) => props.backgroundModal || 'white'};
+  width: ${(props) => props.width || '500px'};
+  height: ${(props) => props.height || '300px'};
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+`;
+
+const Modal = ({
+  isOpen,
+  onRequestClose,
+  children,
+  background,
+  width,
+  height,
+  backgroundModal,
+}) => {
+  if (isOpen) {
     return (
-      <div onClick={onRequestClose} className='container-modal'>
-        <div className='modal'>
-         {children}
-        </div>
-      </div>
-    )
+      <ContainerModal background={background} onClick={onRequestClose}>
+        <ModalStyles
+          width={width}
+          height={height}
+          backgroundModal={backgroundModal}
+        >
+          {children}
+        </ModalStyles>
+      </ContainerModal>
+    );
   }
-}
+};
 
-export default Modal
+export default Modal;

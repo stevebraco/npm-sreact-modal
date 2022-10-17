@@ -15,16 +15,22 @@ function App() {
   return (
     <div className="App">
       <button onClick={openModal}>click</button>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit ipsa quia quaerat eveniet maxime similique facere omnis? Dolorum, sit deleniti.</p>
-    <Modal 
-    isOpen={modalIsOpen}
-    onRequestClose={closeModal}
-  >
-    <p>I am a modal</p>
-    <button onClick={closeModal}>close modal</button>
-  </Modal>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit ipsa quia quaerat eveniet maxime similique facere omnis? Dolorum, sit deleniti.</p>
-
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+        fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit
+        ipsa quia quaerat eveniet maxime similique facere omnis? Dolorum, sit
+        deleniti.
+      </p>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+        <p>I am a modal</p>
+        <button onClick={closeModal}>close modal</button>
+      </Modal>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+        fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit
+        ipsa quia quaerat eveniet maxime similique facere omnis? Dolorum, sit
+        deleniti.
+      </p>
     </div>
   );
 }
