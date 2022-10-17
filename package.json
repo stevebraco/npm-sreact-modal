@@ -1,7 +1,6 @@
 {
   "name": "sreact-modal",
   "version": "0.1.0",
-  "private": "false",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
