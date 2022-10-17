@@ -32,6 +32,12 @@ const Modal = ({
   backgroundModal,
 }) => {
   if (isOpen) {
+    document.querySelector('body').style.overflow = 'hidden';
+  } else {
+    document.querySelector('body').style.overflow = 'auto';
+  }
+
+  if (isOpen) {
     return (
       <ContainerModal background={background} onClick={onRequestClose}>
         <ModalStyles

@@ -23,6 +23,11 @@ const Modal = _ref => {
     backgroundModal
   } = _ref;
   if (isOpen) {
+    document.querySelector('body').style.overflow = 'hidden';
+  } else {
+    document.querySelector('body').style.overflow = 'auto';
+  }
+  if (isOpen) {
     return /*#__PURE__*/_react.default.createElement(ContainerModal, {
       background: background,
       onClick: onRequestClose
