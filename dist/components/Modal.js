@@ -15,8 +15,11 @@ const Modal = _ref => {
   } = _ref;
   if (isOpen) {
     return /*#__PURE__*/_react.default.createElement("div", {
+      onClick: onRequestClose,
+      className: "container-modal"
+    }, /*#__PURE__*/_react.default.createElement("div", {
       className: "modal"
-    }, children);
+    }, children));
   }
 };
 var _default = Modal;

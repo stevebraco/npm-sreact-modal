@@ -1,6 +1,17 @@
+.container-modal {
+  background: rgba(255, 0, 0, 0.432);
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  
+}
+
 .modal {
-  background: red;
+  background: blue;
   width: 500px;
   height: 300px;
-  margin: 0 auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 10px;
 }
