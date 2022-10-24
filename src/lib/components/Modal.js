@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ContainerModal = styled.section`
   background: ${(props) => props.background || 'rgba(0,0,0, .6)'};
-  position: absolute;
+  position: fixed;
   width: 100%;
   inset: 0;
 `;
