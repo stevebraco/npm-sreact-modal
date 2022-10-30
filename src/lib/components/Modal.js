@@ -19,7 +19,7 @@ const ModalStyles = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 10px;
+  padding: 11px;
 `;
 
 const Modal = ({
