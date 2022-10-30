@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          registry: https://registry.npmjs.org/
+          registry: https://registry.npmjs.org/@elbraco%2fsreact-modal
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
