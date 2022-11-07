@@ -30,7 +30,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postversion": "git push && git push --tags",
-    "semantic-release": "semantic-release --branches main"
+    "semantic-release": "semantic-release --branches main",
+    "commit": "git-cz"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +56,12 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
     "@testing-library/react": "^13.4.0",
+    "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^19.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
