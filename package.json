@@ -1,6 +1,6 @@
 {
   "name": "@elbraco/sreact-modal",
-  "version": "0.1.17",
+  "version": "0.0.0-development",
   "author": "Steve <steve.braco@gmail.com>",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,12 +11,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevebraco/npm-sreact-modal.git"
+    "url": "https://github.com/stevebraco/npm-sreact-modal.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,9 +27,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release --branches main"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +53,8 @@
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
-    "@babel/preset-env": "^7.19.4"
+    "@babel/preset-env": "^7.19.4",
+    "@testing-library/react": "^13.4.0",
+    "semantic-release": "^19.0.5"
   }
 }

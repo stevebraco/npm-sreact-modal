@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/modal.css';
 import styled from 'styled-components';
 
 const ContainerModal = styled.section`
@@ -39,7 +38,11 @@ const Modal = ({
 
   if (isOpen) {
     return (
-      <ContainerModal background={background} onClick={onRequestClose}>
+      <ContainerModal
+        data-testid="modal"
+        background={background}
+        onClick={onRequestClose}
+      >
         <ModalStyles
           width={width}
           height={height}
