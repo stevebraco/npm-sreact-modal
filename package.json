@@ -1,6 +1,6 @@
 {
   "name": "@elbraco/sreact-modal",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "author": "Steve <steve.braco@gmail.com>",
   "main": "dist/index.js",
   "module": "dist/index.js",
