@@ -33,6 +33,9 @@
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
