@@ -19,7 +19,7 @@ function App() {
       <p>
         Lorem ipsum dolor sit, amet consctetur adipisicing elit. Reprehenderit
         fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit
-        ipsa quia quaerat eveniet maxime similique facere omnis? Dolorum, sit
+        ipsa quia quaerat eveniet maxime similique facere mnis? Dolorum, sit
         deleniti.
       </p>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
