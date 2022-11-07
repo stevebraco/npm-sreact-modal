@@ -18,7 +18,7 @@ function App() {
       <button onClick={openModal}>click</button>
       <p>
         Lorem ipsum dolor sit, amet consctetur adipisicing elit. Reprehenderit
-        fugiat atque explicabo nisi mollitia odit nemo similique? Minus impedit
+        fugiat atque explicabo nisi molliia odit nemo similique? Minus impedit
         ipsa quia quaerat eveniet maxime similique faceremnis? Dolorum, sit
         deleniti.
       </p>
