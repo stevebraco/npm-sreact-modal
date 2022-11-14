@@ -1,5 +1,5 @@
 {
-  "name": "@elbraco/sreact-modal",
+  "name": "@stevebraco/npm-sreact-modal",
   "version": "0.0.0",
   "author": "Steve <steve.braco@gmail.com>",
   "main": "dist/index.js",
