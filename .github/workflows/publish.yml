@@ -25,12 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           cache: 'npm'
       - run: npm ci
       - run: npm run semantic-release
