@@ -45,6 +45,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
+          token: "${{ secrets.NPM_TOKEN }}"
+          gitToken: "${{ secrets.TOKEN }}"
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
