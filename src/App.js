@@ -18,9 +18,8 @@ function App() {
       <button onClick={openModal}>click</button>
       <p>
         Lorem ipsum dolor sit, amet consctetur adipisicing elit. Reprehenderit
-        fugiat atque explicabo nisi mllia odit nemo similique? Minus impedit
-        ipsa quia quaerat eveniet maxime similique faceremnis? Dolorum, sit
-        deleniti.
+        fugiat atque explicabo nisi llia odit nemo similique? Minus impedit ipsa
+        quia quaerat eveniet maxime similique faceremnis? Dolorum, sit deleniti.
       </p>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
         <p>I am a modal</p>
