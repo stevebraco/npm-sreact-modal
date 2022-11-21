@@ -1,6 +1,6 @@
 {
-  "name": "@stevebraco/npm-sreact-modal",
-  "version": "0.0.4",
+  "name": "npm-sreact-modal",
+  "version": "0.0.0-development",
   "author": "Steve <steve.braco@gmail.com>",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -9,10 +9,6 @@
     "dist",
     "README.md"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stevebraco/npm-sreact-modal.git"
-  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -67,5 +63,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevebraco/npm-sreact-modal.git"
   }
 }

@@ -1,17 +1,14 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-# Name of the workflow
+
 name: Node.js CI
-# Run on every commit tag which begins with "v"
+
 on:
   push:
     branches: ['main']
-    tags:
-      - 'v*'
   pull_request:
     branches: '*'
 
-# Automatically create a GitHub Release, with release details specified (the relevant commits)
 jobs:
   quality:
     runs-on: ${{ matrix.os }}
@@ -28,12 +25,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
       - run: npm ci
-
-      # - run: npm run build --if-present
-      # - run: npm publish
+      - run: npm run build --if-present
       # - run: npm test
 
   publish:
@@ -45,14 +39,9 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          token: '${{ secrets.NPM_TOKEN }}'
-          gitToken: '${{ secrets.TOKEN }}'
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
-          cache: 'npm'
       - run: npm ci
-      - run: npx semantic-release
-
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      - run: npm run semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
